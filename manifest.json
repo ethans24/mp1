@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "ethan's thing",
+    "description": "???",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "icon.png"
+    },
+    
+    "options_page": "",
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content-scripts/content.js"
+            ]
+        }
+    ]
+}
